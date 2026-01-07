@@ -1,23 +1,22 @@
-
 import React, { useState, useEffect, useMemo, useCallback } from 'react';
-import Header from './components/Header.tsx';
-import TimeframeSelector from './components/TimeframeSelector.tsx';
-import BalanceCard from './components/BalanceCard.tsx';
-import StatsRow from './components/StatsRow.tsx';
-import SpendingChart from './components/SpendingChart.tsx';
-import TransactionList from './components/TransactionList.tsx';
-import BottomNav from './components/BottomNav.tsx';
-import AddTransaction from './components/AddTransaction.tsx';
-import ExpenseReport from './components/ExpenseReport.tsx';
-import BudgetView from './components/BudgetView.tsx';
-import AccountView from './components/AccountView.tsx';
-import AllTransactions from './components/AllTransactions.tsx';
-import FilterSettingsModal from './components/FilterSettingsModal.tsx';
-import SecurityView from './components/SecurityView.tsx';
-import NotificationView, { NotificationItem } from './components/NotificationView.tsx';
-import { Transaction, TransactionCategory } from './types.ts';
-import { parseDate, formatNoSignCurrency } from './utils.ts';
-import { translations } from './translations.ts';
+import Header from './components/Header';
+import TimeframeSelector from './components/TimeframeSelector';
+import BalanceCard from './components/BalanceCard';
+import StatsRow from './components/StatsRow';
+import SpendingChart from './components/SpendingChart';
+import TransactionList from './components/TransactionList';
+import BottomNav from './components/BottomNav';
+import AddTransaction from './components/AddTransaction';
+import ExpenseReport from './components/ExpenseReport';
+import BudgetView from './components/BudgetView';
+import AccountView from './components/AccountView';
+import AllTransactions from './components/AllTransactions';
+import FilterSettingsModal from './components/FilterSettingsModal';
+import SecurityView from './components/SecurityView';
+import NotificationView, { NotificationItem } from './components/NotificationView';
+import { Transaction, TransactionCategory } from './types';
+import { parseDate, formatNoSignCurrency } from './utils';
+import { translations } from './translations';
 
 const STORAGE_KEYS = {
   TRANSACTIONS: 'financewise_transactions',
