@@ -1,0 +1,7 @@
+{
+  "name": "FinanceWise VN",
+  "description": "A modern financial management application inspired by the Vietnamese mobile banking experience, featuring balance tracking, spending charts, and transaction history.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
